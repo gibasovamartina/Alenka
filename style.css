@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Delicious Handrawn", cursive;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+    background-color: #f9d0de;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    background-color: #f790b2;
+    width: 50vw;
+    height: 30vw;
+    border-radius: 50px;
+    
+}
+.male{
+    font-size: small;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+.hnede{
+    color:#733D26 ;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    width: 40%;
+    border-radius: 10px;
+    background-color: #733D26;
+    color: #f9d0de;
+    margin: 0;
+    font-size: xx-large;
+    border: none;
+    position: absolute;
+ 
+}
+button:hover{
+    background-color: #AF7F73;
+}
+h1{
+font-size:5vw;
+}
+#ano{
+    left: 3vw;
+}
+#nie{
+    left: 25vw;
+}
+
+/*** #f8b0c8,   #AF7F73, #f790b2, #733D26,#f9d0de*/
+#customAlert {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #AF7F73; /* custom color */
+  color: #733D26;
+  padding: 200px;
+  border-radius: 10px;
+  font-family: 'Delicious Handrawn', cursive;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: #733D26 solid 15px;
+}

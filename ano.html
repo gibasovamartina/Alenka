@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alenka</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="image.png" type="image/x-icon">
+
+</head>
+<body>
+  
+<div class="kvietok">
+    <img src="pngimg.com - rose_PNG66901.png" alt="" id="kvet">
+  </div>
+<div class="v-slider">
+  <div class="track">
+    <img src="img1.jpg" alt="">
+    <img src="img2.jpg" alt="">
+    <img src="img3.jpg" alt="">
+    <img src="img4.jpg" alt="">
+    <img src="img5.jpg" alt="">
+    <img src="img6.jpg" alt="">  
+    <img src="img7.jpg" alt="">
+    <img src="img8.jpg" alt="">
+    <img src="img9.jpg" alt="">
+    <img src="img10.jpg" alt="">
+    <img src="img11.jpg" alt="">
+  </div>
+  
+  
+
+</div>
+<div class="boxx text-center">
+  <h1>JEEEEEJ!</h1>
+    <img src="gif.gif" alt="" id="gif">
+  </div>
+  
+
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+let index = 0;
+const track = document.querySelector('.track');
+const images = document.querySelectorAll('.track img');
+const imgHeight = images[0].offsetHeight;
+
+setInterval(() => {
+  index = (index + 1) % images.length;
+  track.style.transform = `translateY(-${index * imgHeight}px)`;
+}, 2000);
+
+});
+
+</script>
+</body>
+</html>
